@@ -61,3 +61,8 @@
 ```
   ssh <user_to_ssh>
 ```
+
+### Authorized server with github account
+1. Generate ssh public key on server (step above)
+2. Open Github account -> Settings -> SSH & GPG keys -> create new ssh key -> paste rsa_key.pb
+3. Done
