@@ -8,15 +8,15 @@
 5. Done.
 
 ### Configuration ssh from local to server
-1. ssh to server first time
+1. generate ssh public key on local
+```
+  ssh-keygen -t rsa -C <local_name>
+```
+
+2. ssh to server first time
 ```
   chmod 400 <path_to_key_pair>
   ssh -i <path_to_key_pair> <user>@<public_DNS>
-```
-
-2. generate ssh public key on local
-```
-  ssh-keygen -t rsa -C <local_name>
 ```
 
 3. create user (S)
@@ -44,7 +44,13 @@
   sudo chmod 600 ~/.ssh/authorized_keys
 ```
 
-6. Create `config` ssh file
+6. set true for password authentication each times ssh
+```
+  sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+  sudo systemctl restart sshd
+```
+
+7. Create `config` ssh file
   * ssh/config file
   ```
     vi ~/.ssh/config
@@ -57,7 +63,7 @@
     IndentityFile <path_to_key_pair_OR_path_to_private_ssh_key>
   ```
 
-7. ssh to server
+8. ssh to server
 ```
   ssh <user_to_ssh>
 ```
@@ -90,6 +96,15 @@
   }
 
   :wq
+```
+
+4. Check nginx config
+```
+  sudo nginx -t
+```
+
+5. Restart nginx
+```
   sudo service nginx restart
 ```
 
