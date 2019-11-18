@@ -110,7 +110,7 @@
 
 ### Setup https on nginx
 1. Point domain to aws ec2
-Follow [this](https://github.com/moon-hai/steps-deploy-amazon).
+Follow [this](https://github.com/moon-hai/steps-deploy-amazon/blob/master/SETUPDOMAIN.md).
 
 ### Enabled HTTP on EC2
 ```
