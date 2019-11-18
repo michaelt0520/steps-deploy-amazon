@@ -109,6 +109,11 @@
 ```
 
 ### Setup https on nginx
+1. Point domain to aws ec2
+```
+  * Buy new domain on GoDaddy.
+```
+![domain, domain on godaddy](/assets/images/domain.png)
 
 ### Enabled HTTP on EC2
 ```
