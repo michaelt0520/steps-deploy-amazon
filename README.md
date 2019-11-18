@@ -110,10 +110,7 @@
 
 ### Setup https on nginx
 1. Point domain to aws ec2
-```
-  * Buy new domain on GoDaddy.
-```
-![domain, domain on godaddy](/assets/images/domain.png)
+Follow [this](https://github.com/moon-hai/steps-deploy-amazon).
 
 ### Enabled HTTP on EC2
 ```
