@@ -17,6 +17,8 @@ Follow [this](https://github.com/moon-hai/steps-deploy-amazon/blob/master/BASIC_
 1. Point domain to aws ec2
 Follow [this](https://github.com/moon-hai/steps-deploy-amazon/blob/master/SETUP_DOMAIN.md).
 
+2. Config Let's Encrypt SSL on server
+Follow [this](https://github.com/moon-hai/steps-deploy-amazon/blob/master/LET_ENCRYPT_SSL.md).
 
 ### Authorized server with github account
 1. Generate ssh public key on server (step above)
