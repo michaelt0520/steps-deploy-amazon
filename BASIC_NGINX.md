@@ -46,4 +46,4 @@
   On SG of instace, add more Inbound rules is HTTP
   Save
 ```
-![inboud, inboud rules](/assets/images/inbout_rules_https.png)
+![inboud, inboud rules](/assets/images/inboud_rules_https.png)

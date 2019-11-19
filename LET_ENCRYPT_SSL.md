@@ -71,6 +71,6 @@ git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
   Go to EC2 dashboard
   Add Inbound settings: HTTPS
 ```
-![inboud, inboud rules](/assets/images/inbout_rules_https.png)
+![inboud, inboud rules](/assets/images/inboud_rules_https.png)
 
 5. Done
