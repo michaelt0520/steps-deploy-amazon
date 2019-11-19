@@ -11,14 +11,14 @@
 Follow [this](https://github.com/moon-hai/steps-deploy-amazon/blob/master/SSH_TO_SERVER.md).
 
 ### Config nginx on server
-Follow [this](https://github.com/moon-hai/steps-deploy-amazon/blob/master/BASIC_NGINX.md))
+Follow [this](https://github.com/moon-hai/steps-deploy-amazon/blob/master/BASIC_NGINX.md).
 
 ### Setup https on nginx
 1. Point domain to aws ec2
-Follow [this](https://github.com/moon-hai/steps-deploy-amazon/blob/master/SETUPDOMAIN.md).
+Follow [this](https://github.com/moon-hai/steps-deploy-amazon/blob/master/SETUP_DOMAIN.md).
 
 
 ### Authorized server with github account
 1. Generate ssh public key on server (step above)
-2. Open Github account -> Settings -> SSH & GPG keys -> create new ssh key -> paste rsa_key.pb
+2. Open Github account -> Settings -> SSH & GPG keys -> create new ssh key -> paste rsa_key.pub
 3. Done
