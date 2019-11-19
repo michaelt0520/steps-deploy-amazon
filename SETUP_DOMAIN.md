@@ -12,6 +12,7 @@
   Create Hosted Zone
   Input your Domain Name -> Type: Public Hosted Zone -> Create
 ```
+![hosted, create hosted zone](/assets/images/create_hosted_zone.png)
 
 2. Create Record Set
 ```

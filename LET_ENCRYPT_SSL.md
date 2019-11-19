@@ -5,7 +5,7 @@
 git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
 ```
 
-2. Issue SSl Let's Encrypt
+2. Issue SSL Let's Encrypt
 ```
   sudo service nginx stop
   sudo mkdir /opt/letsencrypt/certbot-auto
@@ -15,14 +15,14 @@ git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
 ```
 
 3. Config Nginx
-Create DH parameters 2048 bit
+  * Create DH parameters 2048 bit
 
 ```
   sudo mkdir /etc/nginx/ssl
   sudo openssl dhparam 2048 -out /etc/nginx/ssl/dhparam.pem
 ```
 
-Edit your config
+  * Edit your config
 ```
   sudo vi /etc/nginx/conf/default.conf
 
@@ -60,12 +60,17 @@ Edit your config
   }
 ```
 
-Check nginx and restart
+  * Check nginx and restart
+```
+  sudo nginx -t
+```
+![nginx, nginx check](/assets/images/nginx_check.png)
 
 4. Change inbound setting on EC2
 ```
   Go to EC2 dashboard
   Add Inbound settings: HTTPS
 ```
+![inboud, inboud rules](/assets/images/inbout_rules_https.png)
 
 5. Done

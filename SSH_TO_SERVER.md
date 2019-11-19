@@ -25,6 +25,7 @@
   add <name_of_user> ALL=(ALL) ALL
   :wq
 ```
+![sudoers, sudoers](/assets/images/sudoers.png)
 
 5. setup ssh key authentication (S)
 ```
