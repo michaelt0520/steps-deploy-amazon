@@ -74,3 +74,17 @@ git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
 ![inboud, inboud rules](/assets/images/inboud_rules_https.png)
 
 5. Done
+
+## Auto register when SSL certificate expired
+```
+  /opt/letsencrypt/certbot-auto renew --pre-hook 'service nginx stop' --post-hook 'service nginx start'
+```
+
+## Auto register with crontab
+```
+  EDITOR=vi crontab -e
+
+  30 2 * * * /opt/letsencrypt/certbot-auto renew --pre-hook "service nginx stop" --post-hook "service nginx start" >> /var/log/le-renew.log
+  :wq
+```
+![crontab, add crontab](/assets/images/crontab_add.png)
